@@ -1,0 +1,86 @@
+:root {
+  --primary-purple: #6f42c1;
+  --primary-purple-hover: #593196;
+}
+
+body {
+  background-color: #ffffff;
+  color: #333333;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+
+/* Navbar */
+.custom-navbar {
+  background-color: var(--primary-purple) !important;
+  padding-top: 0.8rem;
+  padding-bottom: 0.8rem;
+}
+
+.custom-navbar .navbar-brand,
+.custom-navbar .nav-link {
+  color: #ffffff !important;
+}
+
+.custom-navbar .nav-link:hover {
+  opacity: 0.85;
+}
+
+/* Títulos de sección */
+.section-title {
+  color: var(--primary-purple);
+  font-weight: 700;
+  font-size: 2.2rem;
+  margin-bottom: 1.5rem;
+}
+
+/* Tarjetas de Skills y Recomendaciones */
+.skill-card, .recommendation-card {
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  background-color: #ffffff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+  transition: transform 0.2s ease-in-out;
+}
+
+.skill-card:hover, .recommendation-card:hover {
+  transform: translateY(-3px);
+}
+
+/* Botones */
+.btn-purple {
+  background-color: #ffffff;
+  color: var(--primary-purple);
+  border: 1px solid var(--primary-purple);
+  font-weight: 600;
+  padding: 0.4rem 1.5rem;
+}
+
+.btn-purple:hover {
+  background-color: var(--primary-purple);
+  color: #ffffff;
+}
+
+/* Scroll To Top Flotante */
+.scroll-top-btn {
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  background-color: var(--primary-purple);
+  color: #ffffff;
+  border: none;
+  font-size: 1.2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+}
+
+.scroll-top-btn:hover {
+  background-color: var(--primary-purple-hover);
+}
+
